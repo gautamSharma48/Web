@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="head"> java-script tutorial</h1>
+        <img src="logo.png" alt="" id="image">
+        <p id="para">java-script is a client side script language.it is used to make a web-page more iterative
+            and dynamic.
+    </p>
+        <button id="button">check some new style using java-script</button>
+
+    </div>
+
+    <script>
+        document.getElementById("para").style.color="blue";
+        document.getElementById("button").style.color="red";
+
+        var b1=document.getElementById("button");
+        b1.onclick=function(){
+        document.getElementById("head").innerHTML="java-script";
+        document.getElementById("head").style.color="blue";
+        document.getElementById("head").style.fontSize="50px";
+        document.getElementById("para").style.color="red";
+        document.getElementById("button").style.color="blue";
+        document.getElementById("image").style.width="250px";
+        }
+    </script>
+    
+</body>
+</html>

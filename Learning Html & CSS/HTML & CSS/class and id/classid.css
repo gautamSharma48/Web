@@ -1,0 +1,28 @@
+.container{
+    background-color: yellow;
+    max-width: 350px;
+    text-align: center;
+    margin-left: 600px;
+    border: 2px solid springgreen;
+}
+
+.info{
+color: blue;
+margin-top: 15px;
+
+}
+input{
+    margin-top: 15px ;
+}
+#head{
+    color: violet;
+    text-align: center;
+}
+h1{
+    border-radius: 2px solid;
+    color: sienna;
+    margin: auto;
+    text-align: center;
+}
+
+
