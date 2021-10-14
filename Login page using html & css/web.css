@@ -1,0 +1,156 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(ios.jpg);
+  background-position: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.menu-bar {
+  background: orange;
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  background-color: transparent;
+}
+.menu-bar li {
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: rgb(5, 40, 80);
+}
+
+.active,.menu-bar ul li:hover {
+  background: #ee8904;
+  border-radius: 3px;
+}
+.menu-bar .fa {
+  margin: 8px;
+}
+.submenu {
+  display: none;
+}
+
+.menu-bar ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  background: orange;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.menu-bar ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0%;
+  text-align: left;
+}
+.menu-bar ul li:hover .submenu ul li:last-child {
+  border-bottom: none;
+}
+.submenu ul li a {
+  color: white;
+}
+.menu-bar ul li:hover .submenu ul li a:hover {
+  color: yellow;
+}
+
+.fa-angle-right {
+  float: right;
+}
+.submenu2 {
+  display: none;
+}
+.hoverme2:hover .submenu2 {
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: orange;
+}
+
+.box {
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-top: 300px;
+  transform: translate(-50%, -50%);
+  background: blueviolet;
+  text-align: center;
+}
+<!-- forlogin-- > 
+
+
+
+
+
+
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+.box a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500px;
+  font-size: 15px;
+}
+.box input[type="text"],.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid yellow;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: yellow;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+::placeholder {
+  color: white;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
